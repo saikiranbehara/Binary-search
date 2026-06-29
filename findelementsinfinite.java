@@ -25,7 +25,7 @@ public class findelementsinfinite {
 		int end=1;
 		while(target>nums[end]) {
 			int newstart=end+1;
-			end=(end+(end-start+1)*2);
+			end=end+(end-start+1)*2;
 			start=newstart;
 		}
 		return findinfinite( nums,target,start,end);
